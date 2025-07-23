@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 
 body{
@@ -11,6 +12,7 @@ body{
     line-height: 1.6;
     background: #f7f9fc;
     color: #222;
+    width: 1440px;
 }
 
 /* === Header === */
@@ -26,9 +28,10 @@ body{
     overflow-x: auto;
   }
   .navbar .logo img{
-    width: 190px;
-    height: 60px;
+    width: 180px;
+    height: 38px;
     flex-shrink: 0;
+    margin-top: 10px;
   }
   .nav-right {
     display: flex;
@@ -85,87 +88,127 @@ body{
   }
 
   .nav-icons #user{
-    font-size: 36px;
+    font-size: 30px;
   }
   
   /* === Main Section=== */
 
-.main{
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    background: linear-gradient(to right, #003973, #3f3f1b);
-    color: white;
-    padding: 2rem;
-    margin-bottom: 2rem;
+/* .main {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  height: 550px;
+  padding: 10px 3% 0 3%;
+  background: linear-gradient(to right, #041226, #072235); 
+  color: #fff;
 }
 .main-content{
-    flex: 1 1 400px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .main-content h1{
     font-size: 2rem;
     color: #f7f9fc;
+    margin-bottom: 20px;
 }
-.main-content h1 span{
-    color: #ffa500;
-}
-.main-content p{
+
+
+
+
+
+  .main-img {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: ;
+    position: relative;
+  }
+  
+  .lady-image{
+    
+    margin-top: 300px;
+  }
+  
+  .logo-image {
+    height: 180px;
+    object-fit: contain;
+  } */
+
+  .main{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 90px 0 3%;
+    color: #fff;
+    border: 2px solid black;
+    background: linear-gradient(to right, #041226, #072235); 
+  }
+  .main-content{
+    padding: 20px;
+  }
+
+  .main-content h1{
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  .main-content h1 span{
+    color: #f7931e;
+  }
+
+  .main-content p{
     font-size: 1.5rem;
-    margin: 0.5rem 0;
+    margin-bottom: 5px;
+  }
+
+  .main-content ul {     
+    padding-left: 1rem;   
+    font-size: 1rem;   
 }
-.main-content ul {
-    list-style-type: disc;      
-    padding-left: 1.5rem;      
-    margin-top: 1rem;
-}
+
 .main-content .cf{
     color: #cfde2a;
-    margin-top: 1rem;
-    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-size: 1.5rem;
 }
+
 .main-content ol{
-    padding-left: 1.5rem;      
-    margin-top: 1rem;
+    padding-left: 1rem;  
+    font-size: 1rem;    
 }
 
 .main-content li {
-    margin-bottom: 0.5rem;     
+    margin-bottom: 0.3rem;     
 }
 
 .callback-btn {
     background-color: #f7931e;
     border: none;
-    padding: 0.7rem 1.2rem;
+    padding: 0.5rem 4.5rem;
     color: white;
     font-weight: bold;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
   }
   .callback-btn:hover {
     background-color: #e6821a;
   }
  
-  .main-img {
+  .main-img{
     display: flex;
-    align-items: center;
-    gap: 10rem;
-    flex: 1 2 50px;
     
   }
-  
-  .lady-image {
-   max-width: 420px;
-   height: 470px;
-   padding-right: 20px;
+  .lady-image{
+    height: 550px;
+
+    
   }
-  
-  .logo-image {
-    max-width: 220px;
-    height: 300px;
+  .logo-image{
+    object-fit: contain;
   }
-  
   /* Course Grid */
 
   .section-title{
@@ -180,8 +223,8 @@ body{
   }
   .courses-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
     padding: 1rem 2rem;
   }
   .course-card { 
@@ -189,6 +232,7 @@ body{
     flex-direction: column;
     justify-content: space-between;
     min-height: 420px;
+    height: 300px;
     padding: 1rem;
     margin-bottom: 2rem;
     margin-top: 2rem;
@@ -246,7 +290,7 @@ body{
     border-radius: 5px;
     padding: 0.5rem;
     gap: 0.3rem;
-    margin-top: 1rem;
+    margin-top: 0rem;
     text-align: center;
   }
   
@@ -272,82 +316,6 @@ body{
   
   /* === Responsive Design === */ 
 
-@media (min-width: 1440px) {
-  .navbar,
-  .main,
-  .courses-grid {
-    max-width: 1440px;
-    margin: 0 auto;
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .main-content h1 {
-    font-size: 2.5rem;
-  }
-
-  .main-content p {
-    font-size: 1.75rem;
-  }
-
-  .callback-btn {
-    font-size: 1rem;
-    padding: 0.8rem 1.5rem;
-  }
-
-  .main-img {
-    gap: 6rem;
-    justify-content: space-between;
-  }
-
-  .lady-image {
-    height: auto;
-    max-width: 520px;
-    object-fit: contain;
-  }
-
-  .logo-image {
-    max-width: 260px;
-    height: auto;
-  }
-
-  .courses-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    padding: 1rem 2rem;
-  }
-  .course-card {
-    min-height: 450px;
-    font-size: 1rem;
-  }
-
-  .course-card p {
-    font-size: 0.9rem;
-    width: 220px;
-    height: auto;
-    padding: 0.4rem 0.5rem;
-  }
-
-  .course-card h3 {
-    font-size: 1.3rem;
-  }
-
-  .course-card ul {
-    font-size: 0.9rem;
-  }
-
-  .course-card .apply-btn {
-    font-size: 0.9rem;
-    height: auto;
-    padding: 1rem;
-  }
-
-  .course-card button {
-    font-size: 1rem;
-    padding: 0.6rem 1.2rem;
-  }
-}
 
 @media (min-width: 1200px) and (max-width: 1439px) {
   .lady-image {
