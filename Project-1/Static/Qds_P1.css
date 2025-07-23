@@ -105,7 +105,7 @@ body{
   }
 
   .main-content h1{
-    font-size: 2.5rem;
+    font-size: 2rem;
     margin-bottom: 10px;
   }
   .main-content h1 span{
@@ -156,12 +156,13 @@ body{
     display: flex;
     
   }
-  .lady-image{
-    height: 550px;
-
+  .main-img .lady-image{
+    height: 430px;  
+    max-width: 500px;
     
   }
-  .logo-image{
+  .main-img .logo-image{
+    max-width:300px ;
     object-fit: contain;
   }
   /* Course Grid */
@@ -186,11 +187,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 420px;
-    height: 300px;
+    min-height: 380px;
+    width: 290px;
     padding: 1rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
+    margin-bottom: 1rem;
+    margin-top: 1rem;
     border-radius: 12px;
     box-shadow: 3px 3px #1e95f7 ;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
